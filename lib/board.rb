@@ -37,9 +37,9 @@ class Board
 		position(position) == "X" || position(position) == "O"
 	end
 
-	def valid_move?(move)
-		move.to_i > 0 && move.to_i < 10 && !taken?(move.to_i)
-	end
+	#def valid_move?(move)
+	#	move.to_i > 0 && move.to_i < 10 && !taken?(move.to_i)
+	#end
 
 	def update(position,player)
 		if valid_move?(position)
